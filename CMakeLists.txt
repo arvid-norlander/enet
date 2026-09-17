@@ -103,6 +103,7 @@ add_library(enet
     ${INCLUDE_FILES}
     ${SOURCE_FILES}
 )
+target_include_directories(enet PUBLIC include)
 
 if (WIN32)
     target_link_libraries(enet winmm ws2_32)
